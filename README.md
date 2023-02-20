@@ -1,6 +1,6 @@
 # **Absensi App By : Raivan Putra**
 
- *Features*
+_Features:_
 
 -   CRUD Posisi (CRUD Jabatan/Posisi)
 -   CRUD Users (Admin, Operator and Users (Employees))
@@ -12,25 +12,22 @@
 
 ## Cara Install di Local
 
--   Hal yang harus dipersiapkan
+-   Hal yang harus dipersiapkan:
     -   git
     -   composer
     -   php v8.1
 
 ```sh
 # clone terlebih dahulu lewat cli (cmd, bash, atau yg lain)
-git clone https://github.com/muhammadpauzi/absensi-app.git
+git clone https://github.com/RaivanPutra/Absensi_app_laravel
 
 # masuk ke foldernya
-cd absensi-app
+cd absensi_app_laravel
 
 # install semua package
 composer install
 
-# pilih salah satu
-# 1. windows
-copy .env.example .env
-# 2. unix (ubuntu, mac os and others)
+# copy file .env.example
 cp .env.example .env
 
 # setelah itu, setting .env file seperti nama database (DB_DATABASE), username dan passwordnya
