@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Attendance;
 use App\Models\Holiday;
-use App\Models\Permission;
 use App\Models\Presence;
 use Carbon\CarbonPeriod;
+use App\Models\Attendance;
+use App\Models\Permission;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller

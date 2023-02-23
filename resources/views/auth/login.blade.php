@@ -5,19 +5,17 @@
 @endpush
 
 @section('content')
-
 <div class="w-100">
-
-
-    <main class="form-signin w-100 m-auto shadow" style="background-color: #eeebeb; border-radius: 10px;">
+    <main class="form-signin w-100 m-auto " style="background-color: #eeebeb; border-radius: 10px;">
+        @include('partials.alerts')
         <form method="POST" action="{{ route('auth.login') }}" id="login-form">
             <h1 class="h3 mb-3 fw-bolder text-center">Login</h1>
             <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInputEmail" name="email" placeholder="name@example.com">
+                <input type="email" class="form-control" id="floatingInputEmail" name="email" placeholder="name@example.com" autofocus required>
                 <label for="floatingInputEmail">Email address</label>
             </div>
             <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password">
+                <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password" required>
                 <label for="floatingPassword">Password</label>
             </div>
 
