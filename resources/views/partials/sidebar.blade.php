@@ -34,7 +34,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link text-white {{ request()->routeIs('presences.*') ? 'active' : '' }}" href="{{ route('presences.index') }}">
-                    <span data-feather="calendar" class="align-text-bottom"></span>
+                    <span data-feather="list" class="align-text-bottom"></span>
                     Data Kehadiran
                 </a>
             </li>

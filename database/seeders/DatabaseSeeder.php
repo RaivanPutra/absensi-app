@@ -36,9 +36,9 @@ class DatabaseSeeder extends Seeder
             'role_id' => Role::where('name', 'operator')->first('id'),
             'position_id' => Position::where('name', 'Operator')->first('id'),
         ]);
-        // \App\Models\User::factory(10)->create([
-        //     'role_id' => Role::where('name', 'user')->first('id'), // user random === employee
-        //     'position_id' => Position::select('id')->inRandomOrder()->first()->id
-        // ]);
+        \App\Models\User::factory(10)->create([
+            'role_id' => Role::where('name', 'user')->first('id'), // user random === employee
+            'position_id' => Position::select('id')->inRandomOrder()->first()->id
+        ]);
     }
 }

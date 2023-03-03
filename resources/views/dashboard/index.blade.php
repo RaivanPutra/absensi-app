@@ -1,22 +1,26 @@
 @extends('layouts.app')
 
 @section('content')
-<div>
-    <div class="row">
-        <div class="col-md-3">
-            <div class="card shadow">
-                <div class="card-body">
-                    <h6 class="fs-6 fw-light">Data Jabatan</h6>
-                    <h4 class="fw-bold">{{ $positionCount }}</h4>
-                </div>
+<div class="row">
+    <div class="col-lg-3 col-6">
+        <div class="card small-box mb-3 text-bg shadow" style="background-color: #2F323B;">
+            <div class="card-body text-center text-light">
+                <h3 class="card-title fw-bolder">{{ $positionCount }}</h3>
+                <p class="card-text fw-bold">Data Jabatan</p>
+            </div>
+            <div class="card-footer text-center" style=" background-color: #607ABD;">
+                <a href="{{ route('positions.index') }}" class="text-decoration-none text-light">Lihat Data <span data-feather="arrow-right-circle" class="align-text-bottom"></span></a>
             </div>
         </div>
-        <div class="col-md-3">
-            <div class="card shadow">
-                <div class="card-body">
-                    <h6 class="fs-6 fw-light">Data Karyawan</h6>
-                    <h4 class="fw-bold">{{ $userCount }}</h4>
-                </div>
+    </div>
+    <div class="col-lg-3 col-6">
+        <div class="card small-box mb-3 text-bg" style="background-color: #1B2336;">
+            <div class="card-body text-center text-light">
+                <h3 class="card-title fw-bolder">{{ $userCount }}</h3>
+                <p class="card-text fw-bold">Data Karyawan</p>
+            </div>
+            <div class="card-footer text-center" style=" background-color: #3A4F52;">
+                <a href="{{ route('employees.index') }}" class="text-decoration-none text-light">Lihat Data <span data-feather="arrow-right-circle" class="align-text-bottom"></span></a>
             </div>
         </div>
     </div>
