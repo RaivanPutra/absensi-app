@@ -19,7 +19,7 @@ _Features:_
 
 ```sh
 # clone terlebih dahulu lewat cli (cmd, bash, atau yg lain)
-git clone https://github.com/RaivanPutra/Absensi_app_laravel
+git clone https://github.com/RaivanPutra/absensi-app.git
 
 # masuk ke foldernya
 cd absensi_app_laravel
